@@ -1,0 +1,12 @@
+n = int(input())
+word = input()
+total_text = []
+current_words = []
+for i in range(n):
+    text = input()
+    total_text.append(text)
+    if word in text:
+        current_words.append(text)
+
+print(total_text)
+print(current_words)
