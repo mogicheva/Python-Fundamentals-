@@ -1,0 +1,7 @@
+a = int(input())
+b = int(input())
+
+def calculation(width, height):
+    return a * b
+
+print(calculation(a, b))
