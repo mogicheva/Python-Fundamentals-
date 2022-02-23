@@ -1,0 +1,7 @@
+string_input = input()
+counter = int(input())
+
+def repeat_string(string, n):
+    return string * n
+
+print(repeat_string(string_input, counter))
