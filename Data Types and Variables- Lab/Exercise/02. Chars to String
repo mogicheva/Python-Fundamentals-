@@ -1,0 +1,5 @@
+symbol_one = input()
+symbol_two = input()
+symbol_three = input()
+total = symbol_one + symbol_two + symbol_three
+print(total)
