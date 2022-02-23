@@ -1,0 +1,4 @@
+start = int(input())
+final = int(input())
+for char in range(start, final+1):
+    print(chr(char), end=" ")
