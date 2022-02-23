@@ -1,0 +1,15 @@
+prod = input()
+counter = int(input())
+
+def order(type, quantity):
+    if type == "coffee":
+        return 1.50 * quantity
+    elif type == "water":
+        return 1.00 * quantity
+    elif type == "coke":
+        return 1.40 * quantity
+    elif type == "snacks":
+        return 2.00 * quantity
+
+total_amount = order(prod, counter)
+print(f"{total_amount:.2f}")
