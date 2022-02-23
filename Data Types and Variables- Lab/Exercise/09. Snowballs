@@ -1,0 +1,20 @@
+import sys
+import math
+total_snowballs = int(input())
+largest_value = -sys.maxsize
+max_snow = -sys.maxsize
+max_time = -sys.maxsize
+max_quality = -sys.maxsize
+for snowball in range(1, total_snowballs + 1):
+    snowball_snow = int(input())
+    snowball_time = int(input())
+    snowball_quality = int(input())
+    snowball_value = int((snowball_snow / snowball_time) ** snowball_quality)
+
+    if snowball_value > largest_value:
+        largest_value = snowball_value
+        max_snow = snowball_snow
+        max_time = snowball_time
+        max_quality = snowball_quality
+
+print(f"{max_snow} : {max_time} = {math.ceil(largest_value)} ({max_quality})")
