@@ -1,0 +1,11 @@
+first_text = input()
+second_text = input()
+last_text = first_text
+for symbol in range(len(first_text)):
+    left_part = second_text[:symbol + 1]
+    right_part = first_text[symbol + 1:]
+    current_text = left_part + right_part
+    if current_text == last_text:
+        continue
+    print(current_text)
+    last_text = current_text
